@@ -208,7 +208,7 @@ p:nth-of-type(2) {
 
 #boven,
 #beneden {
-    background-image: url('images/arrow.png');
+    background-image: url('../images/arrow.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
