@@ -1,0 +1,62 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 75ch;
+}
+
+h1 {
+    color: lightskyblue;
+}
+
+#tekst {
+    font-size: 2rem;
+}
+
+button {
+    background-color: lightblue;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+#tekst span:hover {
+    cursor: pointer;
+    color: white;
+    padding: 1px;
+    background-color: black;
+    border-radius: 3px;
+    /* Kleur veranderen wanneer er overheen wordt gehoverd */
+}
+
+.begin {
+    background-color: lightblue;
+}
+
+.eind {
+    background-color: lightgreen;
+}
+
+#clipboardInfo {
+    width: 75ch;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: 3px solid black;
+}

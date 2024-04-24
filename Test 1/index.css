@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+}
+
+textarea {
+    width: 50%;
+    height: 10em;
+}

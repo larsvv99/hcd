@@ -1,0 +1,223 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    transition: 200ms;
+}
+
+h1,
+h2,
+h3 {
+    color: crimson;
+
+}
+
+main {
+    padding: 1rem;
+    transition: 200ms;
+}
+
+aside {
+    position: sticky;
+    top: 200px;
+}
+
+section {
+    width: 50ch;
+    transition: 200ms;
+    min-height: 3vh;
+}
+
+
+
+#tekst {
+    font-size: 2rem;
+}
+
+button,
+a {
+    background-color: crimson;
+    color: white;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+button:hover,
+a:hover {
+    cursor: pointer;
+    background-color: orange;
+    transform: scale(1.1);
+}
+
+#scroll button,
+#scroll a {
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+#scroll {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
+    width: auto
+}
+
+::selection {
+    background-color: var(--random-selection-color);
+}
+
+p span:hover {
+    cursor: pointer;
+    color: white;
+    padding: 1px;
+    background-color: black;
+    border-radius: 3px;
+    /* Kleur veranderen wanneer er overheen wordt gehoverd */
+}
+
+p:nth-of-type(2) {
+    font-size: 1.2rem;
+}
+
+#clipboardInfo {
+    width: 40ch;
+    max-height: 20rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: 3px solid black;
+    transition: 200ms;
+    overflow: auto;
+}
+
+.feedback,
+.feedback2 {
+    background-size: 400% 400%;
+    animation: gradient 2s forwards;
+}
+
+.feedback {
+    background-image: linear-gradient(90deg, transparent,
+            transparent, transparent, rgba(126, 255, 154, 0.5), transparent,
+            transparent,
+            transparent);
+    animation: gradient 2s forwards;
+}
+
+.feedback2 {
+    background-image: linear-gradient(90deg, transparent,
+            transparent, transparent, rgba(255, 0, 0, 0.5), transparent,
+            transparent,
+            transparent);
+    animation: gradient2 2s forwards;
+}
+
+@keyframes gradient {
+    from {
+        background-position: left;
+    }
+
+    to {
+        background-position: right;
+    }
+}
+
+@keyframes gradient2 {
+    from {
+        background-position: left;
+    }
+
+    to {
+        background-position: right;
+    }
+}
+
+#plaats {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+#kopieerBtn,
+#toevoegenBtn {
+    width: 6rem;
+    height: 3rem;
+}
+
+
+@media screen and (min-width: 1000px) {
+    body {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        align-items: baseline;
+    }
+
+    #clipboardInfo {
+        width: 50ch;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        width: 60ch;
+    }
+
+    #clipboardInfo {
+        width: 60ch;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    section {
+        width: 75ch;
+    }
+
+    #clipboardInfo {
+        width: 75ch;
+    }
+}
+
+
+#boven,
+#beneden {
+    background-image: url('images/arrow.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#boven {
+    transform: rotate(-90deg);
+}
+
+#beneden {
+    transform: rotate(90deg);
+}
